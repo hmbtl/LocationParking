@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "896942363459",
+    "firebase_url": "https://locationparking-b4234.firebaseio.com",
+    "project_id": "locationparking-b4234",
+    "storage_bucket": "locationparking-b4234.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896942363459:android:722584c4dec048f8",
+        "android_client_info": {
+          "package_name": "com.hmbtl.locationparking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896942363459-o5m7lg1gtrk68vibr4du30kcq0aqjpob.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hmbtl.locationparking",
+            "certificate_hash": "536842b490828283ecd15e7f8133fbc7c2489af2"
+          }
+        },
+        {
+          "client_id": "896942363459-62554ljg99p5hf5ahh83opur90uet8iq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfs-0_1WHJzwMQwxH2POyhgEKYKcBaTJI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896942363459-62554ljg99p5hf5ahh83opur90uet8iq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

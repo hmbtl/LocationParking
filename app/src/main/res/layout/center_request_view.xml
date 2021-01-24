@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/requestContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/center_request_view_background"
+        >
+
+        <TextView
+            android:id="@+id/requestLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pending_request"
+            android:textSize="30sp"
+            android:layout_above="@+id/requestsList"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            />
+
+        <ImageButton
+            android:id="@+id/closeButton"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_request_close"
+            android:padding="15dp"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/noRequestText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:textSize="20sp"
+            android:text="@string/no_request_message"
+            android:layout_below="@+id/requestLabel"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/requestsList"
+            android:layout_width="match_parent"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:paddingLeft="20dp"
+            android:layout_centerVertical="true"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            app:reverseLayout="true"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            android:background="@android:color/transparent"
+            />
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        >
+
+
+
+        <TextView
+            android:id="@+id/requestTimer"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="00:00"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:elevation="3dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_circle_requests"
+            />
+
+        <TextView
+            android:id="@+id/requestCount"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="0"
+            android:textSize="9sp"
+            android:textColor="@color/white"
+            android:elevation="3dp"
+            android:gravity="center"
+            android:layout_alignRight="@+id/requestTimer"
+            android:layout_alignTop="@+id/requestTimer"
+            android:background="@drawable/badge_red"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

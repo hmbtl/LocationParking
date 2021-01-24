@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout">
+
+
+    <fragment
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+
+    <RelativeLayout
+        android:id="@+id/acceptedPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:visibility="visible"
+        >
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/acceptedProfile"
+            android:layout_toRightOf="@+id/itemShareTimer"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/facebook_profile_example"
+            app:siBorderColor="@color/blackLight"
+            />
+
+
+        <TextView
+            android:id="@+id/acceptedName"
+            android:layout_toRightOf="@+id/acceptedProfile"
+            android:layout_width="match_parent"
+            android:textSize="30sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:text="Azad HUMBATLI"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/acceptedDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/acceptedName"
+            android:layout_toRightOf="@+id/acceptedProfile"
+            android:text="500 meter away"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/blackLight"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/acceptedNavigate"
+            android:background="@color/blackUltraLight"
+            android:layout_marginBottom="10dp"
+            />
+
+        <com.hmbtl.locationparking.views.ProgressButton
+            android:id="@+id/acceptedNavigate"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/acceptedProfile"
+            android:elevation="5dp"
+            android:textSize="12sp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/navigate"
+            android:background="@drawable/btn_blue"
+            />
+
+        <com.hmbtl.locationparking.views.ProgressButton
+            android:id="@+id/acceptedCancel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/acceptedProfile"
+            android:layout_toRightOf="@+id/acceptedNavigate"
+            android:elevation="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/blackLight"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/cancel_request"
+            android:background="@drawable/btn_black_bordered"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/handshakePanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:visibility="gone"
+        >
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/handshakeProfile"
+            android:layout_toRightOf="@+id/itemShareTimer"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/facebook_profile_example"
+            app:siBorderColor="@color/blackLight"
+            />
+
+
+        <TextView
+            android:id="@+id/handshakeName"
+            android:layout_toRightOf="@+id/handshakeProfile"
+            android:layout_width="match_parent"
+            android:textSize="30sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:text="Azad HUMBATLI"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/handshakeDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/handshakeName"
+            android:layout_toRightOf="@+id/handshakeProfile"
+            android:text="500 meter away"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/blackLight"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/handshakeConfirm"
+            android:background="@color/blackUltraLight"
+            android:layout_marginBottom="10dp"
+            />
+
+        <com.hmbtl.locationparking.views.ProgressButton
+            android:id="@+id/handshakeConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/handshakeProfile"
+            android:elevation="5dp"
+            android:textSize="12sp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/confirm_handshake"
+            android:background="@drawable/btn_blue"
+            />
+
+        <com.hmbtl.locationparking.views.ProgressButton
+            android:id="@+id/handshakeCancel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/handshakeProfile"
+            android:layout_toRightOf="@+id/handshakeConfirm"
+            android:elevation="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/blackLight"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/cancel_request"
+            android:background="@drawable/btn_black_bordered"
+            />
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/parking_location_pin"
+        android:layout_above="@+id/fakeView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_marker_center_select"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/fakeView"
+        />
+
+
+    <ImageButton
+        android:id="@+id/button_my_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_park_car"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/btn_circle_white"
+        android:src="@drawable/ic_my_location"
+        />
+
+
+    <com.hmbtl.locationparking.views.ProgressButton
+        android:id="@+id/button_park_car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_green"
+        android:text="@string/park_your_car"
+
+        />
+
+
+    <com.hmbtl.locationparking.views.CenterRequestView
+        android:id="@+id/request_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_panel_share_view"
+        android:visibility="gone"
+        />
+
+
+    <com.hmbtl.locationparking.views.TopPanelShareView
+        android:id="@+id/top_panel_share_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+</RelativeLayout>

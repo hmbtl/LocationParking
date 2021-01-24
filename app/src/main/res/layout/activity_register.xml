@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/background_register"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:id="@+id/page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registration_password_title"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp"
+            />
+
+
+        <TextView
+            android:id="@+id/page_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/page_title"
+            android:textSize="17sp"
+            android:text="@string/registration_password_sub_title"
+            android:layout_marginBottom="30dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/name_layout"
+            android:visibility="gone"
+            android:layout_below="@+id/page_sub_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_label_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Azad"
+                    android:textSize="30sp"
+                    android:hint="@string/first_name"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_label_surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_surname"
+                    android:layout_width="match_parent"
+                    android:text="Humbatli"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:hint="@string/last_name"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_email"
+            android:layout_below="@+id/page_sub_title"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_label_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="humbetli.azad@gmail.com"
+                    android:textSize="22sp"
+                    android:hint="@string/email"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_password"
+            android:layout_below="@+id/page_sub_title"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:hint="@string/password"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <ImageButton
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/icon_chevron_right"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:elevation="3dp"
+            android:background="@drawable/btn_circle_next"
+
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

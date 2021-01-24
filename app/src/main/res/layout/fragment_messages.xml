@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    >
+
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:id="@+id/profile_1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/facebook_profile_example"
+        app:siBorderColor="@color/blackLight"
+        />
+    
+    <TextView
+        android:id="@+id/name_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Azad Humbatli"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/blackLight"
+        android:textStyle="bold"
+        android:layout_marginBottom="2dp"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/profile_1"
+        />
+
+
+    <TextView
+        android:layout_below="@+id/name_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yeah, it was funny :D"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/blackLight"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/profile_1"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="yesterday"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/blackLight"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/blackUltraLight"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        >
+
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/profile_2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/example_profile_johnny"
+            app:siBorderColor="@color/blackLight"
+            />
+
+        <TextView
+            android:id="@+id/name_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Johnny Cage"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/blackLight"
+            android:textStyle="bold"
+            android:layout_marginBottom="2dp"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/profile_2"
+            />
+
+
+        <TextView
+            android:layout_below="@+id/name_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hala Madrid! "
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/blackLight"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/profile_2"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="19:23"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/blackLight"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/blackUltraLight"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        >
+
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/profile_3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/example_profile_messi"
+            app:siBorderColor="@color/blackLight"
+            />
+
+        <TextView
+            android:id="@+id/name_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leo Messi"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/blackLight"
+            android:textStyle="bold"
+            android:layout_marginBottom="2dp"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/profile_3"
+            />
+
+
+        <TextView
+            android:layout_below="@+id/name_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yeah bro, this year should be mine."
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/blackLight"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/profile_3"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21:05"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/blackLight"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/blackUltraLight"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        >
+
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/profile_4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/example_profile_obama"
+            app:siBorderColor="@color/blackLight"
+            />
+
+        <TextView
+            android:id="@+id/name_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barrach Obama"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/blackLight"
+            android:textStyle="bold"
+            android:layout_marginBottom="2dp"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/profile_4"
+            />
+
+
+        <TextView
+            android:layout_below="@+id/name_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hey, how it is going? Lunch Today?"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/blackLight"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/profile_4"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:23"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/blackLight"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/blackUltraLight"
+        />
+
+
+</LinearLayout>

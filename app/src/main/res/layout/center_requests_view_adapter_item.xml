@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+
+    >
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="300dp"
+        android:layout_height="210dp"
+        android:layout_margin="4dp"
+        card_view:cardCornerRadius="6dp"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:id="@+id/itemRequestProfile"
+                android:layout_width="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/facebook_profile_example"
+                app:siBorderColor="@color/blackLight"
+                />
+
+
+
+            <TextView
+                android:id="@+id/itemRequestName"
+                android:layout_below="@+id/itemRequestProfile"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:text="Azad HUMBATLI"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/itemRequestDistance"
+                android:layout_below="@+id/itemRequestName"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"
+                android:text="500 meters"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+
+            <View
+                android:layout_above="@+id/itemRequestAcceptButton"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/blackUltraLight"
+                />
+
+            <com.hmbtl.locationparking.views.ProgressButton
+                android:id="@+id/itemRequestAcceptButton"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentBottom="true"
+                android:text="Accept"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_green"
+            />
+
+
+            <com.hmbtl.locationparking.views.ProgressButton
+                android:id="@+id/itemRequestRejectButton"
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@+id/itemRequestAcceptButton"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:text="Reject"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_red"
+                />
+        </RelativeLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
